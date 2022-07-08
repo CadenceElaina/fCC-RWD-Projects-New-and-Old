@@ -10,7 +10,7 @@ body {
 
 .container {
     box-shadow: 10px 5px 5px black, -10px 5px 5px black, 0px -5px 5px black;
-
+    min-width: 400px;
     margin: 0 auto;
     width: 50%;
     border: 2px solid #3b3b4f;
