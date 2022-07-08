@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <div class="container">
+        <p id="description">Objective: Build an app that is functionally similar to <a
+                href="https://survey-form.freecodecamp.rocks" target="_blank">https://survey-form.freecodecamp.rocks</a>
+        </p>
+        <form id="survey-form" action="">
+
+            <fieldset>
+                <label id="name-label">Enter your first name: <input type="text" placeholder="John" id="name"
+                        name="firstName" required></label>
+                <label>Enter your last name: <input type="text" placeholder="Doe" id="lName" name="lastName"
+                        required></label>
+                <!-- TODO add error if email is formated incorrectly? -->
+                <label id="email-label">Enter your email: <input type="email" placeholder="JohnDoe@email.com" id="email"
+                        name="email" required></label>
+                <label>Enter a new password: <input type="password" id="password" name="password" required></label>
+                <label id="number-label">Enter your number: <input type="tel" placeholder="(123)-456-7890" id="phone"
+                        name="phone" required min="0" max="9999999999" pattern="^\d{10}$"></label>
+            </fieldset>
+            <fieldset>
+                <label>Upload a profile picture: <input type="file" name="file" /></label>
+                <label>Input your age (years): <input type="number" name="age" min="13" max="120" />
+                </label>
+                <label>How did you hear about us?
+                    <select name="referrer" id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">freeCodeCamp News</option>
+                        <option value="2">freeCodeCamp YouTube Channel</option>
+                        <option value="3">freeCodeCamp Forum</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+                <label>Provide a bio:
+                    <textarea name="bio" rows="3" cols="30" placeholder="I like long walks..."></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+
+
+
+                <label class="radio"><input type="radio" name="account-type" class="inline" /> Personal Account</label>
+                <label class="radio"><input type="radio" name="account-type" class="inline" /> Business Account</label>
+                <div class="formContainer">
+                    <label id="area">Select areas you are intersted in: </label>
+                    <div id="checkbox">
+                        <label><input type="checkbox" name="interests" value="1" required />Front-end</label>
+                        <label><input type="checkbox" name="interests" value="2" required />Back-end</label>
+                        <label><input type="checkbox" name="interests" value="3" required />Full-Stack</label>
+                        <label><input type="checkbox" name="interests" value="4" required />Software Engineering</label>
+                        <label><input type="checkbox" name="interests" value="5" required />Artificial
+                            Intelligence</label>
+                        <label><input type="checkbox" name="interests" value="6" required />Data Science</label>
+                        <label><input type="checkbox" name="interests" value="7" required />App Development</label>
+                        <label><input type="checkbox" name="interests" value="8" required />Game Development</label>
+                    </div>
+                    <label id="terms">
+                        <input type="checkbox" name="terms" class="inline" required /> I accept the <a
+                            href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and
+                            conditions</a>
+                    </label>
+
+            </fieldset>
+
+            <input type="submit" value="Submit" />
+    </div>
+    </form>
+
+    </div>
+</body>
+
+<!-- Build a Survey Form
+Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks
+
+User Stories:
+
+X You should have a page title in an h1 element with an id of title
+X You should have a short explanation in a p element with an id of description
+X You should have a form element with an id of survey-form
+X Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
+X Inside the form element, you are required to enter your email in an input field that has an id of email
+X If you enter an email that is not formatted correctly, you will see an HTML5 validation error
+X Inside the form, you can enter a number in an input field that has an id of number
+X If you enter non-numbers in the number input, you will see an HTML5 validation error
+X If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error
+X For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"
+X For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field
+X Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from
+X Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
+X Inside the form element, you are presented with a textarea for additional comments
+X Inside the form element, you are presented with a button with id of submit to submit all the inputs
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
+
+ -->
+
+</html>

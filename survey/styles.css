@@ -1,0 +1,143 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+.container {
+    box-shadow: 10px 5px 5px black, -10px 5px 5px black, 0px -5px 5px black;
+
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid #3b3b4f;
+    background: rgb(12, 32, 120);
+    background: linear-gradient(180deg, rgba(12, 32, 120, 1) 0%, rgba(139, 14, 105, 1) 100%);
+
+}
+
+.formContainer {
+    background-color: #0a0a23;
+    border: 2px solid rgba(12, 32, 120, 1);
+}
+
+.radio {
+    padding-bottom: 2em;
+}
+
+p {
+    font-style: italic;
+}
+
+h1 {
+    width: 50%;
+    box-shadow: 10px 5px 5px black, -10px 5px 5px black;
+    border: 2px solid aliceblue;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+}
+
+h1,
+p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+}
+
+fieldset:not(:last-of-type) {
+    border-bottom: 3px solid rgba(12, 32, 120, 1);
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input,
+textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 1em auto;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+input:hover {
+    border: 1px solid aliceblue;
+}
+
+#checkbox {
+    text-align: center;
+    display: grid;
+    width: 50vw;
+    height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#area {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#terms {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: darkturquoise;
+}
