@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     background-color: #1b1b32;
     color: #f5f6f7;
     font-family: Tahoma;
@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+    padding: 0 auto;
     box-shadow: 10px 5px 5px black, -10px 5px 5px black, 0px -5px 5px black;
     min-width: 400px;
     margin: 0 auto;
@@ -20,6 +21,8 @@ body {
 }
 
 .formContainer {
+    width: 100%;
+    margin: 0 auto;
     background-color: #0a0a23;
     border: 2px solid rgba(12, 32, 120, 1);
 }
@@ -100,6 +103,11 @@ input[type="submit"] {
     min-width: 300px;
 }
 
+input[type="submit"]:hover {
+    background-color: aliceblue;
+    color: #1b1b32;
+}
+
 input[type="checkbox"] {
     vertical-align: middle;
     margin: 1em auto;
@@ -114,6 +122,7 @@ input:hover {
 }
 
 #checkbox {
+
     text-align: center;
     display: grid;
     width: 50vw;
@@ -123,6 +132,16 @@ input:hover {
     width: 100%;
     padding-top: 2em;
     padding-bottom: 2em;
+}
+
+.a {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 2px solid #1b1b32;
+    background: rgb(12, 32, 120);
+    background: linear-gradient(180deg, rgba(139, 14, 105, 1) 0%, #1b1b32 100%);
+
 }
 
 #area {

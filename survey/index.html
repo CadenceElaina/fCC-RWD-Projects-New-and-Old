@@ -16,65 +16,69 @@
                 href="https://survey-form.freecodecamp.rocks" target="_blank">https://survey-form.freecodecamp.rocks</a>
         </p>
         <form id="survey-form" action="">
+            <div class="a">
 
-            <fieldset>
-                <label id="name-label">Enter your first name: <input type="text" placeholder="John" id="name"
-                        name="firstName" required></label>
-                <label>Enter your last name: <input type="text" placeholder="Doe" id="lName" name="lastName"
-                        required></label>
-                <!-- TODO add error if email is formated incorrectly? -->
-                <label id="email-label">Enter your email: <input type="email" placeholder="JohnDoe@email.com" id="email"
-                        name="email" required></label>
-                <label>Enter a new password: <input type="password" id="password" name="password" required></label>
-                <label id="number-label">Enter your number: <input type="tel" placeholder="(123)-456-7890" id="number"
-                        name="phone" required min="0" max="9999999999" pattern="^\d{10}$"></label>
-            </fieldset>
-            <fieldset>
-                <label>Upload a profile picture: <input type="file" name="file" /></label>
-                <label>Input your age (years): <input type="number" name="age" min="13" max="120" />
-                </label>
-                <label>How did you hear about us?
-                    <select name="referrer" id="dropdown">
-                        <option value="">(select one)</option>
-                        <option value="1">freeCodeCamp News</option>
-                        <option value="2">freeCodeCamp YouTube Channel</option>
-                        <option value="3">freeCodeCamp Forum</option>
-                        <option value="4">Other</option>
-                    </select>
-                </label>
-                <label>Provide a bio:
-                    <textarea name="bio" rows="3" cols="30" placeholder="I like long walks..."></textarea>
-                </label>
-            </fieldset>
-            <fieldset>
-
-
-
-                <label class="radio"><input type="radio" name="account-type" class="inline" /> Personal Account</label>
-                <label class="radio"><input type="radio" name="account-type" class="inline" /> Business Account</label>
-                <div class="formContainer">
-                    <label id="area">Select areas you are intersted in: </label>
-                    <div id="checkbox">
-                        <label><input type="checkbox" name="interests" value="1" required />Front-end</label>
-                        <label><input type="checkbox" name="interests" value="2" required />Back-end</label>
-                        <label><input type="checkbox" name="interests" value="3" required />Full-Stack</label>
-                        <label><input type="checkbox" name="interests" value="4" required />Software Engineering</label>
-                        <label><input type="checkbox" name="interests" value="5" required />Artificial
-                            Intelligence</label>
-                        <label><input type="checkbox" name="interests" value="6" required />Data Science</label>
-                        <label><input type="checkbox" name="interests" value="7" required />App Development</label>
-                        <label><input type="checkbox" name="interests" value="8" required />Game Development</label>
-                    </div>
-                    <label id="terms">
-                        <input type="checkbox" name="terms" class="inline" required /> I accept the <a
-                            href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and
-                            conditions</a>
+                <fieldset>
+                    <label id="name-label">Enter your first name: <input type="text" placeholder="John" id="name"
+                            name="firstName" required></label>
+                    <label>Enter your last name: <input type="text" placeholder="Doe" id="lName" name="lastName"
+                            required></label>
+                    <!-- TODO add error if email is formated incorrectly? -->
+                    <label id="email-label">Enter your email: <input type="email" placeholder="JohnDoe@email.com"
+                            id="email" name="email" required></label>
+                    <label>Enter a new password: <input type="password" id="password" name="password" required></label>
+                    <label id="number-label">Enter your number: <input type="tel" placeholder="(123)-456-7890"
+                            id="number" name="phone" required min="0" max="9999999999" pattern="^\d{10}$"></label>
+                </fieldset>
+                <fieldset>
+                    <label>Upload a profile picture: <input type="file" name="file" /></label>
+                    <label>Input your age (years): <input type="number" name="age" min="13" max="120" />
                     </label>
-                </div>
-            </fieldset>
+                    <label>How did you hear about us?
+                        <select name="referrer" id="dropdown">
+                            <option value="">(select one)</option>
+                            <option value="1">freeCodeCamp News</option>
+                            <option value="2">freeCodeCamp YouTube Channel</option>
+                            <option value="3">freeCodeCamp Forum</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </label>
+                    <label>Provide a bio:
+                        <textarea name="bio" rows="3" cols="30" placeholder="I like long walks..."></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
 
-            <input type="submit" value="Submit" />
 
+
+                    <label class="radio"><input type="radio" name="account-type" class="inline" /> Personal
+                        Account</label>
+                    <label class="radio"><input type="radio" name="account-type" class="inline" /> Business
+                        Account</label>
+                    <div class="formContainer">
+                        <label id="area">Select areas you are intersted in: </label>
+                        <div id="checkbox">
+                            <label><input type="checkbox" name="interests" value="1" required />Front-end</label>
+                            <label><input type="checkbox" name="interests" value="2" required />Back-end</label>
+                            <label><input type="checkbox" name="interests" value="3" required />Full-Stack</label>
+                            <label><input type="checkbox" name="interests" value="4" required />Software
+                                Engineering</label>
+                            <label><input type="checkbox" name="interests" value="5" required />Artificial
+                                Intelligence</label>
+                            <label><input type="checkbox" name="interests" value="6" required />Data Science</label>
+                            <label><input type="checkbox" name="interests" value="7" required />App Development</label>
+                            <label><input type="checkbox" name="interests" value="8" required />Game Development</label>
+                        </div>
+                        <label id="terms">
+                            <input type="checkbox" name="terms" class="inline" required /> I accept the <a
+                                href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and
+                                conditions</a>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Submit" />
+            </div>
         </form>
     </div>
 
