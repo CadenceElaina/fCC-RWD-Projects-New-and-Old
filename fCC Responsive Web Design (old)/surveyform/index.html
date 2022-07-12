@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containter">
+        <h1 id="title">
+         Coding Survey Form
+        </h1>
+        <p id="description">
+        Thank you for participating, happy coding!
+        </p>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <div class="form-group">
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <label id="email-label" for="email">Email</label>
+            <div class="form-group">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+ 
+            <div class="form-group">
+                <label id="number-label" for="number">
+                    Age
+                    <span class="clue">(optional)</span>
+                </label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            </div>
+            <div id="role">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="university-student">University graduate or student</option>
+                    <option value="bootcamp-student">Bootcamp graduate or student</option>
+                    <option value="self-learner">Self learner</option>
+                    <option value="prefer-no">Prefer not to say</option>
+                    <option value="other"> Other (please enter below)</option>
+                </select>
+                <p>If other was selected please describe your role</p>
+                <textarea id="other" class="input-textarea" name="comment" placeholder="My role is..."></textarea>
+                <p>Why did you start coding?</p>
+                <textarea id="why" class="input-textarea" name="comment" placeholder="I started coding because..."></textarea>
+            </div>
+            <div id="recommend">
+                <p>Would you recommend coding to a friend?</p>
+                <label>
+                <input name="user-recommend" value="Yes" type="radio" class="input-radio" checked>
+                Yes
+                </label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+                    Depends
+                </label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+                    No
+                </label>
+            </div>
+            <div id="favorite">
+                <p>What is your favorite thing about coding?</p>
+                <select id="favorite" name="favorite" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="It's-challenging!">It's challenging!</option>
+                    <option value="more-to-learn!">There's always more to learn!</option>
+                    <option value="Flexibility!">Flexibility!</option>
+                    <option value="Compensation!">Compensation!</option>
+                </select>
+            </div>
+            <div id="interest">
+                <p>What areas of Computer Science interest you?</p>
+                <label>
+                    <input name="interest" value="Front-end Web Development" type="checkbox" class="input-checkbox">
+                    Front-end Web Development
+                    </label>
+                    <label>
+                    <input name="interest" value="Back-end Web Development" type="checkbox" class="input-checkbox">
+                    Back-end Web Development
+                    </label>
+                    <label>
+                    <input name="interest" value="Data Science" type="checkbox" class="input-checkbox">
+                    Data Science
+                    </label>
+                    <label>
+                    <input name="interest" value="Software Development" type="checkbox" class="input-checkbox">
+                    Software Development
+                    </label>
+                    <label>
+                    <input name="interest" value="Artificial Intelligence (A.I.)" type="checkbox" class="input-checkbox">
+                    Artificial Intelligence (A.I.)
+                    </label>
+                    <label>
+                     <input name="interest" value="Cloud Computing" type="checkbox" class="input-checkbox">
+                    Cloud Computing
+                    </label>
+                    <label>
+                     <input name="interest" value="Quantum Computing" type="checkbox" class="input-checkbox">
+                    Quantum Computing
+                    </label>
+                    <label>
+                    <input name="interest" value="Artificial Intelligence (A.I.)" type="checkbox" class="input-checkbox">
+                    Artificial Intelligence (A.I.)
+                    </label>
+                    <label>
+                    <input name="interest" value="Cyber Security" type="checkbox" class="input-checkbox">
+                    Cyber Security
+                    </label>
+        
+            </div>
+            <div id="submit">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        
+        </form>
+            </div>
+</body>
+</html>

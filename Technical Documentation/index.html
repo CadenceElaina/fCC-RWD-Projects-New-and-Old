@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main id="main-doc">
+        <nav id="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="container1">
+                <label class="logo">WDN Web Docs</label><img id="sparkles" src="sparkling.png"
+                    alt="3 yellow sparkle like stars">
+            </div>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#s2" class="nav-link">HTML</a></li>
+                <li><a href="#s3" class="nav-link">CSS</a></li>
+                <li><a href="#s4" class="nav-link">JavaScript</a></li>
+                <li><a href="#s5" target="_blank" class="nav-link">HTTP</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+
+            <section class="main-section">
+                <div class="post-and-sidebar">
+                    <header id="s1">Learn to code</header>
+                    <img id="img1" src="Thumbnail-v7.png">
+                    <p>It's hard to stay motivated and to continue learning in today's world of constant change in
+                        technology, languages, and frameworks. We may feel overwhelmed by the sheer amount of options,
+                        and how far the rabbit hole goes down each one.</p>
+                    <p>So I wanted...<a id="link"
+                            href="https://www.freecodecamp.org/news/how-to-stay-motivated-to-keep-learning-to-code/">see
+                            more from this fCC article here</a></p>
+                    <code></code>
+                    <li class="bottom">Reference documentation of common programming languages at <a href=""
+                            target="_blank">https://developer.mozilla.org/en-US/</a></li>
+                </div>
+
+            </section>
+            <!--      <nav>
+            <header>Topic of the techincal documentation</header>
+            <a href="#s1" class="nav-link"></a>
+            <a href="#s2" class="nav-link"></a>
+            <a href="#s3" class="nav-link"></a>
+            <a href="#s4" class="nav-link"></a>
+            <a href="#s5" class="nav-link"></a>
+        </nav> -->
+
+            <section class="main-section">
+                <div class="post-and-sidebar">
+                    <header id="s2">HTML</header>
+                    <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the
+                        meaning
+                        and structure of web content. Other technologies besides HTML are generally used to describe a
+                        web
+                        page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+                    <p>"Hypertext" refers to links that connect web pages to one another, either within a single website
+                        or
+                        between websites. Links are a fundamental aspect of the Web. By uploading content to the
+                        Internet
+                        and linking it to pages created by other people, you become an active participant in the World
+                        Wide
+                        Web.</p>
+                    <pre
+                        class=" language-html"><code class=" language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ie=edge<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span id="text1">HTML 5 Boilerplate</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>style.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>index.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+                          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+                    <li class="bottom">Learn more about <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                            target="_blank">HTML</a></li>
+                </div>
+            </section>
+            <section class="main-section">
+                <div class="ball"></div>
+                <div class="post-and-sidebar">
+                    <header id="s3">CSS</header>
+                    <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a
+                        document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS
+                        describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+                    <p>CSS is among the core languages of the open web and is standardized across Web browsers according
+                        to W3C specifications. Previously, development of various parts of CSS specification was done
+                        synchronously, which allowed versioning of the latest recommendations. You might have heard
+                        about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.</p>
+                    <p>Below is the HTML & CSS needed to create the animated ball in the top right of this
+                        section. Not too hard is it?
+                    </p>
+                    <p>credit to: <a
+                            href="https://www.geeksforgeeks.org/how-to-make-smooth-bounce-animation-using-css/">geeksforgeeks.org</a>
+                    </p>
+
+                    <code>
+    <pre
+    class=" language-html"><code class=" language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+     
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>    
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div class="ball"</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+      
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code>
+                    </pre>
+                    </code>
+                    <code>body {
+                        <br>          display: flex;
+                       <br>     justify-content: center;
+                        <br>}
+                        <br>
+                        <br>  .ball {
+                          <br>   width: 100px;
+                        <br>    height: 100px;
+                         <br>      border-radius: 50%;
+                     <br>   background-color: #FF5722;
+                     <br>         animation: bounce 0.5s;
+                     <br> animation-direction: alternate;
+                     <br> animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+                     <br>       animation-iteration-count: infinite;
+                     <br> }
+                  <br>    @keyframes bounce {
+                  <br> from {
+                    transform: translate3d(0, 0, 0);
+                }
+                  <br> to {
+                    transform: translate3d(0, 200px, 0);
+                }
+                  <br>}
+                  <br> @-webkit-keyframes bounce {
+                    <br>from {
+                    <br>      -webkit-transform: translate3d(0, 0, 0);
+                   <br> transform: translate3d(0, 0, 0);
+                    <br>}
+                    <br>    to {
+                    <br>   -webkit-transform: translate3d(0, 200px, 0);
+                    <br>            transform: translate3d(0, 200px, 0);
+                    <br>            }
+                    <br> }
+                      </code>
+
+                    <li>learn more about <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                            target="_blank">CSS</a></li>
+                </div>
+            </section>
+            <section class="main-section">
+                <div class="post-and-sidebar">
+
+                    <header id="s4">JavaScript</header>
+                    <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with
+                        first-class functions. While it is most well-known as the scripting language for Web pages, many
+                        non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.
+                        JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting
+                        object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more
+                        about JavaScript.</p>
+                    <p>This section is dedicated to the JavaScript language itself, and not the parts that are specific
+                        to Web pages or other host environments. For information about APIs that are specific to Web
+                        pages, please see Web APIs and DOM.</p>
+                    <code></code>
+                    <li class="bottom">learn more about <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                            target="_blank">JavaScript</a></li>
+                </div>
+            </section>
+            <section class="main-section">
+                <div class="post-and-sidebar">
+                    <header id="s5">HTTP</header>
+                    <p>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia
+                        documents, such as HTML. It was designed for communication between web browsers and web servers,
+                        but it can also be used for other purposes. HTTP follows a classical client-server model, with a
+                        client opening a connection to make a request, then waiting until it receives a response. HTTP
+                        is a stateless protocol, meaning that the server does not keep any data (state) between two
+                        requests.</p>
+
+
+                    <li class="bottom">Learn more about <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP"
+                            target="_blank">HTTP</a></li>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#" id="top">Top</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+
+</html>
+<!-- Build a Technical Documentation Page
+Objective: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks
+
+User Stories:
+
+X You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
+X Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five
+X The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+X Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
+The .main-section elements should contain at least ten p elements total (not each)
+The .main-section elements should contain at least five code elements total (not each)
+The .main-section elements should contain at least five li items total (not each)
+You can see a nav element with a corresponding id="navbar"
+The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+The header element in the #navbar must come before any link (a) elements in the navbar
+Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+Your technical documentation should use at least one media query
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS -->

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="python.jpg" id="python">
+    <div class="container">
+
+
+        <div class="navbar">
+            <nav id="navbar">
+                <ul>
+
+                    <li><a href="https://www.python.org/">Python</a></li>
+                    <li class="left">
+                        <span class="language">
+                            <select>
+                                <option value="en" selected="selected">English</option>
+                                <option value="es">Spanish</option>
+                                <option value="fr">French</option>
+                                <option value="ja">Japanese</option>
+                                <option value="ko">Korean</option>
+                                <option value="pt-br">Brazilian Portuguese</option>
+                                <option value="zh-cn">Simplified Chinese</option>
+                                <option value="zh-tw">Traditional Chinese</option>
+                            </select>
+                        </span>
+                        <span class="version">
+                            <select>
+                                <option value="3.10">dev (3.10)</option>
+                                <option value="3.9" selected="selected">3.9.2</option>
+                                <option value="3.8">3.8</option>
+                                <option value="3.7">3.7</option>
+                                <option value="3.6">3.6</option>
+                                <option value="3.5">3.5</option>
+                                <option value="2.7">2.7</option>
+                            </select>
+                        </span>
+                    </li>
+
+                    <a href="https://docs.python.org/3/" id="indexlink">Documentation »</a>
+                    <li class="right">
+                        <div class="search" style role="search">
+                            <form class="search" action="" method="get">
+                                <input placeholder="Search" type="text" name="q">
+                                <input type="submit" value="Go">
+                            </form>
+                        </div>
+                    </li>
+                    <li class="right1">
+                        <a href="">previous</a>
+                    </li>
+                    <li class="right1">
+                        <a href="">next</a>
+                    </li>
+                    <li class="right1">
+                        <a href="https://docs.python.org/3/py-modindex.html">modules</a>
+                    </li>
+                    <li class="right1">
+                        <a href="https://docs.python.org/3/genindex.html">index</a>
+                    </li>
+
+
+
+                </ul>
+
+            </nav>
+            <div class="documentwrapper">
+                <div class="body">
+                    <main id="main-doc" class="main-doc">
+                        <div class="sidebar1">
+                            <nav id="navbar">
+                                <header class="black" id="title">Python Documentation</header>
+                                <ul>
+                                    <li>
+                                        <a class="nav-link" href="#Introduction">Introduction</a>
+                                    </li>
+                                    <ul>
+                                        <li>
+                                            <a class="nav-link" href="#Hello_World!">Hello World!</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="#Variables,_Strings,_and_Numbers">Variables,
+                                                Strings,
+                                                and
+                                                Numbers</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="#Lists_and_Tuples">Lists and Tuples</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="#Introducing_Functions">Introducing Functions</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="#If_Statements">If Statements</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="#Loops">Loops</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="#Further_Learning">Further Learning</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="#Resources_I've_found_helpful">Resources I've
+                                                found
+                                                helpful</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="body1">
+                            <section class="main-section" id="Introduction">
+                                <header class="black">Introduction</header>
+                                <p>Python is an interpreted high-level general-purpose programming language.
+                                    Python's
+                                    design
+                                    philosophy emphasizes code readability with its notable use of significant
+                                    indentation.
+                                    Its language constructs as well as its object-oriented approach aim to help
+                                    programmers
+                                    write
+                                    clear, logical code for small and large-scale projects. I dont understand the
+                                    use of
+                                    <code>code element.</code><code> Here is another code element in use.</code><code> One more for good measure.</code>
+                                </p>
+                            </section>
+                            <section class="main-section" id="Hello_World!">
+                                <header class="black">Hello World!</header>
+                                <p>A "Hello, World!" program generally is a computer program that outputs or
+                                    displays
+                                    the
+                                    message
+                                    "Hello, World!". Such a program is very simple in most programming languages,
+                                    and is often used to illustrate the basic syntax of a programming language. It
+                                    is
+                                    often
+                                    the
+                                    first program written by people learning to code. Here is the code used to
+                                    create
+                                    such a program in Python.</p>
+                                <ul class="gray"><span class="purple">print</span>(<span class="green">'Hello
+                                        World!')</span>
+                                </ul>
+                            </section>
+                            <section class="main-section" id="Variables,_Strings,_and_Numbers">
+                                <header class="black">Variables, Strings, and Numbers
+                                </header>
+                                <p>
+                                    A <span id="light"><em>Variable</em></span> is an identifier that holds a value.
+                                </p>
+                                <div class="gray">
+                                    <ul><span class="black">message =</span> <span class="green">"Hello
+                                            World!"</span>
+                                    </ul>
+                                    <ul><span class="purple">print</span>(message)</ul>
+                                </div>
+                                <p>This prints to the console the variable "message", which contains the value of
+                                    "Hello
+                                    World!".
+                                    The output would be: "Hello World!"</p>
+                                <p><span id="light"><em>Strings</em></span> are a sequence of characters, either as
+                                    a
+                                    literal
+                                    constant or as some kind of
+                                    variable. </p>
+                                <div class="gray">
+                                    <ul><span class="black">my_string = </span><span class="green">"This a a
+                                            double-quoted
+                                            string."</span></ul>
+                                </div>
+                                <p><span id="light"><em>Numbers</em></span> include the following:</p>
+                                <ul>int (signed integers) − They are often called just integers or ints, are
+                                    positive or
+                                    negative
+                                    whole numbers with no decimal point.</ul>
+
+                                <ul>long (long integers ) − Also called longs, they are integers of unlimited size,
+                                    written
+                                    like
+                                    integers and followed by an uppercase or lowercase L. </ul>
+
+                                <ul>float (floating point real values) − Also called floats, they represent real
+                                    numbers
+                                    and
+                                    are
+                                    written with a decimal point dividing the integer and fractional parts.
+                                    Floats may also be in scientific notation, with E or e indicating the power of
+                                    10
+                                    (2.5e2
+                                    =
+                                    2.5 x
+                                    102 = 250). </ul>
+
+                                <ul>complex (complex numbers) − are of the form a + bJ, where a and b are floats and
+                                    J
+                                    (or
+                                    j)
+                                    represents the square root of -1 (which is an imaginary number).
+                                    The real part of the number is a, and the imaginary part is b. Complex numbers
+                                    are
+                                    not
+                                    used
+                                    much
+                                    in Python programming. </ul>
+
+
+                            </section>
+                            <section class="main-section" id="Lists_and_Tuples">
+                                <header class="black">Lists and Tuples</header>
+                                <p>A <span id="light"><em>list</em></span> is a collection of arbitrary objects,
+                                    somewhat
+                                    akin
+                                    to an
+                                    array in
+                                    many other programming languages but more flexible.
+                                    Lists are defined in Python by enclosing a comma-separated sequence of objects
+                                    in
+                                    square
+                                    brackets ([]), as shown below:</p>
+                                <div class="gray">
+                                    <ul><span class="black"> a = [</span><span class="green">'foo'</span><span
+                                            class="orange">,</span> <span class="green">
+                                            'bar'</span><span class="orange">,</span> <span
+                                            class="green">'up'</span><span class="orange">,</span> <span
+                                            class="green">'dog'</span><span class="black">]</span></ul>
+                                    <ul> <span class="purple">print</span><span class="black">(a)</span></ul>
+                                    <ul> <span class="black">returns the following >>> ['foo', 'bar', 'up',
+                                            'dog']</span>
+                                    </ul>
+                                </div>
+
+                                <p><span id="light"><em>Tuples</em></span> are identical to lists in all respects,
+                                    except
+                                    for
+                                    the
+                                    following properties:
+
+                                    <li>Tuples are defined by enclosing the elements in parentheses (()) instead of
+                                        square
+                                        brackets
+                                        ([]).</li>
+                                    <li>Tuples are immutable.</li>
+                                </p>
+                            </section>
+                            <section class="main-section" id="Introducing_Functions">
+                                <header class="black">Introducing Functions</header>
+                                <p>A <span id="light"><em>function</em></span> in Python is an aggregation of
+                                    related
+                                    statements
+                                    designed to perform a
+                                    computational, logical, or evaluative task.
+                                    The idea is to put some commonly or repeatedly done task together and make a
+                                    function so
+                                    that
+                                    instead of writing the same code again and again for different inputs,
+                                    we can call the function to reuse code contained in it over and over again.
+
+                                    <br> Functions can be both built-in or user-defined. It helps the program to be
+                                    concise,
+                                    non-repetitive, and organized.<br>
+                                </p>
+                                <p>
+                                    <br># A simple Python function to check<br>
+                                    <br># whether x is even or odd<br>
+
+                                <ul class="gray">
+                                    <p><span class="orange">def</span> <span class="cyan">evenOdd</span><span
+                                            class="black">(x):</span></p>
+                                    <ul><span class="orange">if</span> <span class="black">x %</span><span
+                                            id="blue">2</span><span class="black">== </span><span id="blue"><span
+                                                class="black">0</span></span>:
+                                    </ul>
+                                    <ul>
+                                        <ul><span class="purple">print</span> <span class="green">("even")</span>
+                                        </ul>
+                                    </ul>
+                                    <ul><span class="orange">else:</span></ul>
+                                    <ul>
+                                        <ul><span class="purple">print</span> <span class="green">("odd")</span>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                                <br><br>
+                                # Driver code to call the function
+                                <ul class="gray">
+                                    <p><span class="black">evenOdd</span>(<span class="blue">2</span>)</p>
+                                    <p><span class="black">evenOdd</span>(<span class="blue">3</span>)</p>
+                                    <p class="black">Output:
+                                    <ul class="black">even</ul>
+                                    <ul class="black">odd</ul>
+                                    </p>
+                                </ul>
+                            </section>
+                            <section class="main-section" id="If_Statements">
+                                <header class="black">If Statements</header>
+                                <p>In Python the <span id="light"><em>if statement</em></span> is used for
+                                    conditional
+                                    execution
+                                    or
+                                    branching. <code>selectAll()</code>An if
+                                    statement is one of the control structures.
+                                    (A control structure controls the flow of the program.)</p>
+                                <p>The if statement may be combined with certain operator such as equality (==),
+                                    greater
+                                    than
+                                    (>=),
+                                    smaller than (<=) and not equal (!=). Conditions may be combined using the keywords
+                                        or and and.</p>
+                                        <p>Example:</p>
+                                        <div class="gray">
+                                            <ul class="black">x = <span class="blue">3</span></ul>
+                                            <ul class="black">if x < <span class="blue">10</span>: <ul><span
+                                                            class="purple">print</span>(<span class="green">'x is
+                                                            less
+                                                            than
+                                                            ten'</span>)</ul>
+
+                                            </ul>
+                                            <ul class="black">returns the following >>> x is less than ten</ul>
+                                        </div>
+                            </section>
+                            <section class="main-section" id="Loops">
+                                <header class="black">Loops</header>
+                                <p>There are two types of loops in Python, for and while.</p>
+                                <p>A <span id="light"><em>"for" loop</em></span> iterates over a given sequence.
+                                    Here is
+                                    an
+                                    example:</p>
+                                <div class="gray">
+                                    <ul class="black">primes = [<span class="blue">2</span><span class="orange">,</span>
+                                        <span class="blue">3</span><span class="orange">,</span> <span
+                                            class="blue">5</span><span class="orange">,</span> <span
+                                            class="blue">7</span>]
+
+                                    </ul>
+                                    <ul class="black"><span class="orange">for</span> prime <span
+                                            class="orange">in</span> primes:
+                                        <ul>
+                                            <span class="purple">print</span>(prime)
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="main-section" id="Further_Learning">
+                                <header class="black">Further Learning</header>
+                                <p><code>Python is one of many languages that often share common elements, but differ in
+                                    their
+                                    uses and syntax. (selectAll())</code> The best way to learn programming is to do
+                                    it. Learn the syntax
+                                    of
+                                    the
+                                    language you are
+                                    interested in and the principles of computer science.
+                                    Then apply that knowledge by building simple projects. Start with tutorials, but
+                                    as
+                                    you
+                                    get more comfortable you should avoid using tutorials if possible. Self-learning
+                                    and
+                                    knowing how to find pertinent information
+                                    is vital in your journey to becomming a successful programmer. Once you become
+                                    more
+                                    comfortable with a language and the basics of computer science you will find
+                                    other
+                                    languages more palpable. Search engines, Youtube,
+                                    Stackoverflow, Reddit, or a fellow programmer are great places to start when
+                                    looking
+                                    for
+                                    help.
+                                </p>
+                                <li>Here is an Li in action</li>
+                                <li>Here is another Li in action</li>
+                                <li>Here is yet another Li in action</li>
+                            </section>
+                            <section class="main-section" id="Resources_I've_found_helpful">
+                                <header class="black">Resources I've found helpful</header>
+                                <ul><a class="white"
+                                        href="https://www.freecodecamp.org/">https://www.freecodecamp.org/</a></ul>
+                                <ul><a class="white"
+                                        href="https://www.khanacademy.org/">https://www.khanacademy.org/</a>
+                                </ul>
+                                <ul><a class="white"
+                                        href="https://ocw.mit.edu/courses/intro-programming/">https://ocw.mit.edu/courses/intro-programming/</a>
+                                </ul>
+                                <ul><a class="white"
+                                        href="https://www.python.org/about/gettingstarted/">https://www.python.org/about/gettingstarted/</a>
+                                </ul>
+                                <ul><a class="white"
+                                        href="https://wiki.python.org/moin/BeginnersGuide">"https://wiki.python.org/moin/BeginnersGuide</a>
+
+                                    </p>
+                            </section>
+                        </div>
+                    </main>
+                </div>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+body{
+  background-color: #1e2933;
+}
+@media (max-height: 800px){
+  p{
+      font-size:10px;
+
+  }
+}
+.container{
+  
+  @media screen and (max-width: 800) and (min-width: 480)
+  {
+
+  font-size: 8px;
+    
+  }
+}
+
+h3{
+  padding: 5px 0 0 5px;
+}
+
+h2{
+  text-align: center;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.sidebar1{
+ padding-right: 50px;
+ grid-column: 1/2;
+ width: 202px;
+ background-color: #3776ab;
+ color: #e6e8ea;
+ text-decoration: none;
+ border-right: 5px solid #ffd343;
+ 
+}
+.sidebar1 a {
+   color: inherit; 
+}
+.sidebar1 li{
+  padding: 5px 0 0 5px;
+}
+
+div{
+  display: block;
+
+}
+.body{
+  background-color: #2b5b84;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  color: #e6e8ea;
+  width: 100%;
+ 
+  
+
+}
+.body1{
+  padding-left: 120px;
+ line-height: 140%;
+ grid-column: 2/2;
+ min-width: 450px;
+ max-width: 800px;
+}
+.documentwrapper{
+  
+  width: 100%
+}
+#python{
+  padding-top: 2px;
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffd343;
+    border-bottom: 2px solid  #1e2933;
+
+}
+#navbar li{
+    list-style: none;
+}
+.search{
+    display: inline;
+}
+nav{
+
+    flex: 1;
+    text-align: left;
+  
+  }
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top:-50px;
+
+  }
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+.left{
+  order:1;
+}
+.right{
+    margin-left: 900px;
+    order: 2;
+  }
+.sidebar{
+  float: left;
+ width:230px;
+ border-radius: 5px;
+ line-height: 130%;
+ font-size: smaller;
+ clear: both;
+  position: absolute;
+}
+.sidebarwrapper{
+  padding: 10px 5px 0 10px;
+  position: absolute;
+}
+.black{
+  color: black; 
+}
+.blue{
+  color:blue !important;
+}
+.orange{
+  color: darkorange !important;
+}
+.purple{
+  color: purple !important;
+}
+.cyan{
+  color: #00ced1 !important;
+}
+.gray{
+  background-color: #eee !important;
+  border: 2px solid;
+}
+#light{
+  color: #00b9fb !important;
+  font-weight: bold;
+}
+.green{
+  color: green !important;
+}
+.white{
+  color: #e6e8ea;
+}
