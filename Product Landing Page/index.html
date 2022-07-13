@@ -5,40 +5,322 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prodict Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/jpg" href="img\chart.jpeg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header id="header">
-        <img id="header-img" src=" " alt="logo">
         <nav id="nav-bar">
-            <ul>
-                <li class="nav-link"><a href="#">home</a></li>
-                <li class="nav-link"><a href="#">section1</a></li>
-                <li class="nav-link"><a href="#">section2</a></li>
+            <div class="left-logo"><a href="#">
+                    <div class="logo"><img id="header-img"
+                            src="https://media.giphy.com/media/Y2ZUWLrTy63j9T6qrK/giphy.gif" alt="logo">
+
+                    </div>
+                </a></div>
+
+            <p id="logo"><a href="#">Logo</a></p>
+
+            <ul class="nb">
+                <li class="nav-link" id="n1"><a class="active" href="#">home</a></li>
+                <li class="nav-link" id="n2"><a href="#c1">Open an account</a></li>
+                <li class="nav-link" id="n3"><a href="#c2">Our Platforms </a></li>
+                <li class="nav-link" id="n4"><a href="#c3">Retirement</a></li>
+                <li class="nav-link" id="n5"><a href="#c4">Work with an advisor </a></li>
+                <li>
+
+                    <div class="form-group">
+                        <label for="USER">User ID</label>
+                        <input class="user" id="user_orig" type="text" name="USER" placeholder="User ID">
+                    </div>
+
+                </li>
+                <li>
+                    <div class="form-group">
+                        <label class="" for="PASSWORD">Password</label>
+                        <input class="pass" type="password" name="PASSWORD" placeholder="Password">
+                    </div>
+
+                </li>
             </ul>
         </nav>
     </header>
-    <section class="sec1">
-        <p>Playable video below</p>
-        <img>
+    <section class="sec0">
+        <div class="container0">
+
+        </div>
     </section>
-    <section class="sec2">
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <div class="form-group">
-                <header>Join our newsletter!</header>
-                <label for="name">Enter your name: <input type="text" id="name" placeholder="John Doe"></label>
+    <section class="sec1" id="sec1">
+        <div class="container" id="c1">
+            <div class="c2-gradient">
+                <div class="row row-flex">
+                    <div class="left">
+                        <div class="text fade-in-text">
+                            <h2 class="header-lg">New chapter, new opportunities</h2>
+                            <h3 class="vert-offset-sm">InvestingBrand from Company-with even more ways to pursue your
+                                goals.
+                            </h3>
+                            <h3 class="vert-offset-lg"><a class="arrow-text" href="" alt="see how to start investing"
+                                    aria-label="see how to start investing">Learn how to start investing <ion-icon
+                                        name="arrow-round-forward"></ion-icon></a></h3>
+                            <div>
+                                <button>
+                                    <a href="" alt="open an account" class="btn" aria-label="open an account">Open an
+                                        account</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right fade-in-image">
+                        <img src="img\manhorizon.jpeg" alt="man facing a horizon in a mountain range above a river">
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="example@email.com" required>
+        </div>
+    </section>
+    <section class="sec2" id="sec2">
+        <div class="container" id="c2">
+            <div class="gold-gradient">
+
+                <div class="row row-flex">
+                    <div class="left-sm">
+                        <img src="img\platforms.jpg"
+                            alt="Broker platform on phone, tablet, a watch lol, and a destop PC">
+                    </div>
+                    <div class="right-sm">
+                        <h2 class="header-lg">Take on the market with our powerful platforms</h2>
+                        <h3 class="vertical-offset-lg">Trade without trade-offs. Our desktop, web, and mobile platforms
+                            are
+                            built for all levels of investors.</h3>
+                        <div>
+                            <button>
+                                <a href="" alt="See what it offers" class="btn" aria-label="See what it offers">See what
+                                    it
+                                    offers</a>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="form-group">
-                <button type="submit" id="submit" value="Submit">Submit</button>
+        </div>
+    </section>
+    <section id="c6">
+        <div class="sec7">
+            <div class="container7">
+                <span>
+                    <h2 class="text-center vertical-offset-md">Focus on your future, not on fees.</h2>
+                </span>
+                <div class="card-group  card-group-center">
+
+                    <a target="_self" href="/what-we-offer/pricing-and-rates" alt="Learn more about pricing"
+                        class="card card-primary flex-xs-12 flex-sm-6 flex-md-4" aria-label="Learn more about pricing">
+
+                        <div class="accent chart-color-4"></div>
+
+
+                        <div class="card-body">
+
+                            <h3 class="text-center"><i class="et-icon et-transaction"></i><br>
+                                <span class="text-purple">$0 commissions trades<sup>1</sup></span>
+                            </h3>
+                            <p class="text-center subhead">Online US-listed stocks, ETFs, and options</p>
+
+                        </div>
+                    </a>
+                    <a target="_self" href="/what-we-offer/pricing-and-rates" alt="Learn more about options pricing"
+                        class="card card-primary flex-xs-12 flex-sm-6 flex-md-4"
+                        aria-label="Learn more about options pricing">
+
+                        <div class="accent chart-color-4"></div>
+
+
+                        <div class="card-body">
+
+                            <h3 class="text-center"><i class="et-icon et-growth"></i><br>
+                                <span class="text-purple">65¢ options contracts<sup>1</sup></span>
+                            </h3>
+                            <p class="text-center subhead">Lorem ipsum dolor, consectetur adipiscing elit.<br>
+                            </p>
+
+                        </div>
+                    </a>
+
+
+                    <a target="_self" href="/what-we-offer/pricing-and-rates" alt="Learn more about futures pricing"
+                        class="card card-primary flex-xs-12 flex-sm-6 flex-md-4"
+                        aria-label="Learn more about futures pricing">
+
+                        <div class="accent chart-color-4"></div>
+
+                        <div class="card-body">
+
+                            <h3 class="text-center"><i class="et-icon et-computer"></i><br>
+                                <span class="text-color">$1.50</span>
+                            </h3>
+                            <p class="text-center subhead">Futures contracts<sup>2</sup></p>
+
+                        </div>
+                    </a>
+
+                </div>
             </div>
-        </form>
+        </div>
+    </section>
+    <section class="sec3" id="sec3">
+
+        <div class="row row-flex" id="c3">
+            <div class="left-sm2">
+                <h2 class="header-lg">Reach for retirement</h2>
+                <h3 class="vert-offset-lg">Our easy-to-use tools help you get started on your retiremnt journey.
+                </h3>
+                <div>
+                    <button>
+                        <a href="" alt="Start a plan for retirement" class="btn"
+                            aria-label="Start a plan for retirement">Start planning</a>
+                    </button>
+                </div>
+            </div>
+            <div class="right-sm2">
+                <img src="https://media.giphy.com/media/3o6Zt6pVdZ8amNrCec/giphy.gif"
+                    alt="Stan learns a valuable lesson about letting others invest his money">
+            </div>
+
+
+        </div>
 
     </section>
+    <section class="sec4" id="sec4">
+        <div class="center">
+            <iframe id="vid" width="800" height="600" src="https://www.youtube.com/embed/10QoUi2PmNs"
+                title="Warren Buffett: Buying And Holding Index Funds Has Worked | CNBC" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p id="vidtext">Warren Buffett pointing out that low-cost/free index funds are still the most viable
+                strategy for
+                the majority of people.</p>
+        </div>
+
+    </section>
+    <section class="sec6">
+
+
+        <div class="start">
+
+            <h2 id="sec5">Start investing today</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </h3>
+            <div id="arr2">
+                <a href="" alt="See all pricing" class="arrow-text">See all pricing <ion-icon
+                        name="arrow-round-forward"></ion-icon>
+                </a>
+
+            </div>
+            <button> <a href="" alt="Click here to open an account" class="btn"
+                    aria-label="Click here to open an account">Open
+                    an account</a></button>
+
+        </div>
+
+    </section>
+    <section class="sec5" id="sec50">
+        <div class="advisor" id="c4">
+            <h2 id="h5">Schedule a time to discuss your goals with a dedicated adivsor</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+
+                <div class="form-group1">
+                    <label for="name">Enter your name: <input type="text" id="name" placeholder="John Doe"></label>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@email.com" required>
+                    <button type="submit" id="submit" value="Submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <footer>
+
+        <ul class="col1">
+            <li class="fh">Company Overview</li>
+            <li class="li"><a href="#">Investor Relations</a></li>
+            <li class="li"><a href="#">Careers</a></li>
+            <li class="li"><a href="#">Privacy</a></li>
+        </ul>
+
+        <ul class="col2">
+            <li class="fh">Service</li>
+            <li class="li"><a href="#">Locations</a></li>
+            <li class="li"><a href="#">Contact Us</a></li>
+            <li class="li"><a href="#">Help</a></li>
+            <li class="li"><a href="#">FAQs</a> </li>
+            <li class="li"><a href="#">Financial Consultants</a></li>
+
+
+        </ul>
+        <ul class="col3">
+            <li class="fh">Quick Links</li>
+            <li class="li"><a href="#">Open An Account</a></li>
+            <li class="li"><a href="#">Sitemap</a></li>
+            <li class="li"><a href="#">Security</a></li>
+            <li class="li"><a href="#">Advertising
+                    Practices</a></li>
+            <li class="li"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Share Your
+                    Feedback</a></li>
+            <li class="li"><a href="#">View
+                    Full Online Banking Site</a></li>
+        </ul>
+
+
+        <div class="ads">
+            <div class="fb">
+                <h3>
+                    Advertising Practices</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+
+
+
+
+                <ul>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-pinterest"></ion-icon>
+
+                </ul>
+
+
+                <p class="legal-text"><span class="member-fdic">Name of Company, N.A. Member
+                        FDIC.</span>
+                    <span class="equalhousing-container"><a id="equalHousingLender" href="/help/equalhousing-popup/"
+                            class="equalhousing spa-fn spa-boa-window"
+                            data-options="{&quot;windowName&quot;:&quot;equalHousingLenderWin&quot;,&quot;size&quot;:&quot;&quot;,&quot;height&quot;:400,&quot;width&quot;:600,&quot;menubar&quot;:true,&quot;scrollbars&quot;:true,&quot;status&quot;:true}"
+                            data-popup-event-attached="1">Equal Housing Lender</a></span>
+                </p>
+                <p class="legal-text">©&nbsp;<span id="dynamic-copyright-year-update">2022</span>&nbsp;Name of
+                    Company. <span>All
+                        rights reserved.</span></p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="app.js" defer></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
 </html>
